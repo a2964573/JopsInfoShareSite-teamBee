@@ -1,0 +1,187 @@
+@charset "UTF-8";
+*{margin:0px; padding:0px;}
+ul{list-style: none;}
+.frame{
+	width: 1903px;
+}
+.header{
+	width: 1903px;
+}
+.mainContent{
+	width: 1903px;
+	height: 700px;
+}
+.mainLogo{
+	display: block;
+	margin: 0 auto;
+	padding-top: 40px;
+	width: 439px;
+	height: 124px;
+}
+.infoLogo{
+	display: block;
+	position: fixed;
+	background-color: white;
+	width: 1300px;
+	height: 51px;
+	z-index: 1;
+}
+.infoLogo img{
+	position: absolute;
+	right: 0px;
+}
+.logo img{
+	margin-top: 50px;
+}
+.list{
+	position: relative;
+	top: 400px;
+	width: 1903px;
+	height: 180px;
+}
+.list li,.listAlt li{
+	display: inline-block;
+	margin-left: 101px;
+	width: 250px;
+	font-family: sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}
+.listAlt li{
+	text-align: center;
+}
+.list li:first-child,.listAlt li:first-child{
+	margin-left: 300px;
+}
+.listAlt{
+	position: relative;
+	list-style: none;
+	top: 400px;
+}
+.listAlt li:hover .listEx,.listAlt li:hover .listExLast{
+	width: 601px;
+	opacity: 1;
+	transition: all 0.8s linear;	
+}
+.listEx{
+	position: absolute;
+	top: -380px;
+	width: 0px;
+	height: 200px;	
+	opacity: 0.5;
+	overflow: hidden;
+}
+.listExLast{
+	position: absolute;
+	top: -380px;
+	left: 1001px;
+	width: 0px;
+	height: 200px;	
+	opacity: 0.5;
+	overflow: hidden;
+}
+.listEx img{
+	width: 601px;
+	height: 200px;
+}
+.list div{
+	width: 250px;
+	height: 175px;
+	border: 1px solid black;
+	border-radius: 25px;
+	overflow: hidden;
+}
+.list div:hover{
+	border-radius: 50%;
+	transition: 0.8s linear;
+}
+.list div button{
+	background-size: 250px 175px;
+	width: 250px;
+	height: 175px;
+	border: none;
+	cursor: pointer;
+}
+.list div button:hover{
+	transform: scale(1.2);
+	transition: 0.8s linear;
+}
+/***start redirect***/
+/*redirectBefore*/
+.list span{
+	margin-left: 25px;
+	position: absolute;
+	cursor: pointer;
+}
+.itGameRedirect,.itMobileRedirect,.itNetworkRedirect,.itDbaRedirect,
+.machaErectionRedirect,.machaShipRedirect,.machaAirlineRedirect,.machaHelicopterRedirect,
+.medicRecorderRedirect,.medicAnimalRedirect,.medicNerveRedirect,.medicEmergencyRedirect,
+.eduKidRedirect,.eduSpecialRedirect,.eduAfterRedirect,.eduResearcherRedirect{
+	position: absolute;
+	margin-left: 25px;
+	width: 0;
+	height: 0;
+	font-size: 0;
+}
+/*redirectAfter*/
+.itGameRedirectMove,.itMobileRedirectMove,.itNetworkRedirectMove,.itDbaRedirectMove,
+.machaErectionRedirectMove,.machaShipRedirectMove,.machaAirlineRedirectMove,.machaHelicopterRedirectMove,
+.medicRecorderRedirectMove,.medicAnimalRedirectMove,.medicNerveRedirectMove,.medicEmergencyRedirectMove,
+.eduKidRedirectMove,.eduSpecialRedirectMove,.eduAfterRedirectMove,.eduResearcherRedirectMove{
+	border: 1px solid black;
+	border-radius: 25px;
+	width: 200px;
+	height: 140px;
+	transition: 0.3s ease;
+	z-index: 1;
+}
+/*3칸후퇴*/
+.eduKidRedirectMove{
+	transform: translate(-1053px,-400px);
+}
+/*2칸후퇴*/
+.medicRecorderRedirectMove,.eduSpecialRedirectMove{
+	transform: translate(-702px,-400px);
+}
+/*1칸후퇴*/
+.machaErectionRedirectMove,.medicAnimalRedirectMove,.eduAfterRedirectMove{
+	transform: translate(-351px,-400px);
+}
+/*전진x*/
+.itGameRedirectMove,.machaShipRedirectMove,.medicNerveRedirectMove,.eduResearcherRedirectMove{
+	transform: translateY(-400px);
+}
+/*1칸전진*/
+.itMobileRedirectMove,.machaAirlineRedirectMove,.medicEmergencyRedirectMove{
+	transform: translate(351px,-400px);
+}
+/*2칸전진*/
+.itNetworkRedirectMove,.machaHelicopterRedirectMove{
+	transform: translate(702px,-400px);
+}
+/*3칸전진*/
+.itDbaRedirectMove{
+	transform: translate(1053px,-400px);
+}
+/*redirectAfter alt*/
+.itGameRedirectMove font,.itMobileRedirectMove font,.itNetworkRedirectMove font,.itDbaRedirectMove font,
+.machaErectionRedirectMove font,.machaShipRedirectMove font,.machaAirlineRedirectMove font,.machaHelicopterRedirectMove font,
+.medicRecorderRedirectMove font,.medicAnimalRedirectMove font,.medicNerveRedirectMove font,.medicEmergencyRedirectMove font,
+.eduKidRedirectMove font,.eduSpecialRedirectMove font,.eduAfterRedirectMove font,.eduResearcherRedirectMove font{
+	position: absolute;
+	top: 141px;
+	min-width: 200px;
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+}
+/***end redirect***/
+.bottom{
+	padding-top: 50px;
+	width: 1903px;
+	height: 50px;
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: bold;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="css/basic.css" type="text/css" rel="stylesheet"/>
+<title>메인화면|~All For You</title>
+</head>
+<body bgcolor="#26beff">
+	<div class="frame">
+		<div class="header">
+			<div class="mainLogo">
+				<a href="index.html" target="_self"><img src="images/메인화면로고.jpg" alt="메인화면으로.."/></a>
+			</div>
+		</div>
+		<div class="mainContent">
+			<div class="list">
+				<ul>
+					<li>
+						<!-- 정보기술 -->
+						<span id="itGameRedirect" class="itGameRedirect" onclick="location.href='html/itGameInfo.html'"
+							style="background: url(images/게임기획자아이콘.png); background-size: 200px 140px;">
+							<font>게 임 기 획 자</font>
+						</span>
+						<span id="itMobileRedirect" class="itMobileRedirect" onclick="location.href='html/itMobileInfo.html'"
+							style="background: url(images/모바일컨텐츠개발자아이콘.png); background-size: 200px 140px;">
+							<font>모바일컨텐츠개발자</font>
+						</span>
+						<span id="itNetworkRedirect" class="itNetworkRedirect" onclick="location.href='html/itNetworkInfo.html'"
+							style="background: url(images/네트워크엔지니어아이콘.png); background-size: 200px 140px;">
+							<font>네트워크엔지니어</font>
+						</span>
+						<span id="itDbaRedirect" class="itDbaRedirect" onclick="location.href='html/itDbaInfo.html'"
+							style="background: url(images/데이터베이스관리자아이콘.png); background-size: 200px 140px;">
+							<font>데이터베이스관리자</font>
+						</span>
+						<div>
+							<button style="background-image: url(images/정보기술아이콘.jpg);" 
+								onclick="itRedirectTransform()" id="listItBtn"></button>
+						</div>
+					</li
+					><li>
+						<!-- 기계공학 -->
+						<span id="machaErectionRedirect" class="machaErectionRedirect" onclick="location.href='html/machaErectionInfo.html'"
+							style="background: url(images/건설기계공학기술자아이콘.png); background-size: 200px 140px;">
+							<font>건설기계공학기술자</font>
+						</span>
+						<span id="machaShipRedirect" class="machaShipRedirect" onclick="location.href='html/machaShipInfo.html'" 
+							style="background: url(images/조선공학기술자아이콘.png); background-size: 200px 140px;">
+							<font>조선공학기술자</font>
+						</span>
+						<span id="machaAirlineRedirect" class="machaAirlineRedirect" onclick="location.href='html/machaAirlineInfo.html'" 
+							style="background: url(images/항공공학기술자아이콘.png); background-size: 200px 140px;">
+							<font>항공공학기술자</font>
+						</span>
+						<span id="machaHelicopterRedirect" class="machaHelicopterRedirect" onclick="location.href='html/machaHelicopterInfo.html'" 
+							style="background: url(images/헬리콥터정비원아이콘.png); background-size: 200px 140px;">
+							<font>헬리콥터정비원</font>
+						</span>
+						<div>	
+							<button style="background-image: url(images/기계공학아이콘.jpg);" 
+								onclick="machaRedirectTransform()" id="listMachaBtn"></button>
+						</div>
+					</li
+					><li>
+						<!-- 의 학 -->
+						<span id="medicRecorderRedirect" class="medicRecorderRedirect" onclick="location.href='html/medicRecorderInfo.html'" 
+							style="background: url(images/의무기록사아이콘.png); background-size: 200px 140px;">
+							<font>의무기록사</font>
+						</span>
+						<span id="medicAnimalRedirect" class="medicAnimalRedirect" onclick="location.href='html/medicAnimalInfo.html'" 
+							style="background: url(images/수의사아이콘.png); background-size: 200px 140px;">
+							<font>수 의 사</font>
+						</span>
+						<span id="medicNerveRedirect" class="medicNerveRedirect" onclick="location.href='html/medicNerveInfo.html'"  
+							style="background: url(images/신경과전문의사아이콘.png); background-size: 200px 140px;">
+							<font>신경과전문의사</font>
+						</span>
+						<span id="medicEmergencyRedirect" class="medicEmergencyRedirect" onclick="location.href='html/medicEmergencyInfo.html'" 
+							style="background: url(images/응급의학과전문의사아이콘.png); background-size: 200px 140px;">
+							<font>응급의학과전문의사</font>
+						</span>
+						<div>
+							<button style="background-image: url(images/의학아이콘.jpg);" 
+								onclick="medicRedirectTransform()" id="listMedicBtn"></button>
+						</div>
+					</li
+					><li>
+						<!-- 교 육 학 -->
+						<span id="eduKidRedirect" class="eduKidRedirect" onclick="location.href='html/eduKidInfo.html'"  
+							style="background: url(images/유치원교사아이콘.png); background-size: 200px 140px;"
+							><font>유 치 원 교 사</font></span>
+						<span id="eduSpecialRedirect" class="eduSpecialRedirect" onclick="location.href='html/eduSpecialInfo.html'"  
+							style="background: url(images/특수학교교사아이콘.png); background-size: 200px 140px;"
+							><font>특수학교교사</font></span>
+						<span id="eduAfterRedirect" class="eduAfterRedirect" onclick="location.href='html/eduAfterInfo.html'"  
+							style="background: url(images/방과후교사아이콘.png); background-size: 200px 140px;"
+							><font>방 과 후 교 사</font></span>
+						<span id="eduResearcherRedirect" class="eduResearcherRedirect" onclick="location.href='html/eduResearcherInfo.html'" 
+							style="background: url(images/교육학연구원아이콘.png); background-size: 200px 140px;"
+							><font>교육학연구원</font></span>
+						<div>
+							<button style="background-image: url(images/교육학아이콘.jpg);" 
+								onclick="eduRedirectTransform()" id="listEduBtn"></button>
+						</div>
+					</li>
+				</ul>
+			</div>	
+			<div class="listAlt">
+				<ul>
+					<li>정보기술<div class="listEx"><img src="images/메인_정보기술설명.jpg" alt="정보기술에 대한 설명"/></div></li
+					><li>기계공학<div class="listEx"><img src="images/메인_기계공학설명.jpg" alt="기계공학에 대한 설명"/></div></li
+					><li>의 학<div class="listEx"><img src="images/메인_의학설명.jpg" alt="의학에 대한 설명"/></div></li
+					><li>교 육 학<div class="listExLast"><img src="images/메인_교육학설명.jpg" alt="교육학에 대한 설명"/></div></li>
+				</ul>
+			</div>
+		</div><!-- end mainContent -->
+		<div class="bottom">
+			Copyright 2021. TeamBEE. 
+		</div><!-- end bottom -->
+	</div><!-- end frame -->
+	<script type="text/javascript" src="javascript/redirect.js"></script>
+</body>
+</html>
